@@ -2,6 +2,8 @@
 
 A single-page React application for reviewing and editing company records.
 
+![App preview](preview.png)
+
 ## Setup
 
 ```bash
@@ -26,8 +28,6 @@ abstractions, no dependencies that don't earn their place. As a product engineer
 I care about the experience on both sides: the end user gets a fast, no-friction
 tool, and the next engineer to open the codebase can understand it immediately
 without digging through layers of configuration or indirection.
-
-![App preview](preview.png)
 
 ## Tech decisions
 
