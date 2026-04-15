@@ -1,0 +1,167 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  padding: 2rem 1rem;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #888;
+  display: block;
+  margin-top: 2px;
+}
+
+/* export button */
+.export-btn {
+  background: #111;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.export-btn:hover {
+  background: #333;
+}
+
+/* error banner */
+.error-banner {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: #dc2626;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+/* sections */
+section {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 1.25rem;
+}
+
+/* fields */
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.875rem;
+}
+
+input, select, textarea {
+  font-size: 0.9rem;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+  background: white;
+  color: #111;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3b82f6;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+input:disabled, select:disabled {
+  background: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* errors */
+.err {
+  font-size: 0.75rem;
+  color: #dc2626;
+}
+
+/* director and location rows */
+.director-row, .location-row {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
+/* buttons */
+.add-btn {
+  font-size: 0.85rem;
+  color: #3b82f6;
+  background: transparent;
+  border: 1px dashed #93c5fd;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+
+.add-btn:hover {
+  background: #eff6ff;
+}
+
+.remove-btn {
+  font-size: 0.8rem;
+  color: #dc2626;
+  background: transparent;
+  border: 1px solid #fca5a5;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: end;
+  margin-bottom: 0.875rem;
+}
+
+.remove-btn:hover {
+  background: #fef2f2;
+}
