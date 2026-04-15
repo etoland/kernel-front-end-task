@@ -27,6 +27,8 @@ I care about the experience on both sides: the end user gets a fast, no-friction
 tool, and the next engineer to open the codebase can understand it immediately
 without digging through layers of configuration or indirection.
 
+![App preview](preview.png)
+
 ## Tech decisions
 
 **React + Vite, not Next.js**
