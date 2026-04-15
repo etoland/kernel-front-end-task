@@ -84,6 +84,7 @@ export default function Locations({ locations, onChange, error, locationErrors }
   
             {locations.length > 1 && (
               <button
+              type="button"
                 className="remove-btn"
                 onClick={() => remove(i)}
               >
@@ -93,7 +94,9 @@ export default function Locations({ locations, onChange, error, locationErrors }
           </div>
         ))}
   
-        <button className="add-btn" onClick={add}>+ Add location</button>
+        <button 
+        type="button"
+        className="add-btn" onClick={add}>+ Add location</button>
       </section>
     )
   }

@@ -55,6 +55,7 @@ export default function Directors({ directors, onChange, error, directorErrors }
   
             {directors.length > 1 && (
               <button
+              type="button"
                 className="remove-btn"
                 onClick={() => remove(i)}
               >
@@ -64,7 +65,9 @@ export default function Directors({ directors, onChange, error, directorErrors }
           </div>
         ))}
   
-        <button className="add-btn" onClick={add}>+ Add director</button>
+        <button 
+        type="button"
+        className="add-btn" onClick={add}>+ Add director</button>
       </section>
     )
   }

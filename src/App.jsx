@@ -12,6 +12,10 @@ export default function App() {
   const [submitted, setSubmitted] = useState(false)
 
   function updateCompany(updated) {
+    if (updated.fundingStage !== 'public') {
+      updated.ticker = null
+      updated.stockExchange = null
+    }
     setCompany(updated)
     if (submitted) {
       setErrors(validateCompany(updated, mockData.naicsReference))
@@ -32,7 +36,9 @@ export default function App() {
       <header className="header">
         <div>
           <h1>{company.name}</h1>
-          <span className="meta">{company.ticker} · {company.stockExchange}</span>
+          {company.fundingStage === 'public' && (
+            <span className="meta">{company.ticker} · {company.stockExchange}</span>
+          )}
         </div>
         <button onClick={handleExport} className="export-btn">
           Export JSON
