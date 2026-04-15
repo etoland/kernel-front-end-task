@@ -63,18 +63,21 @@ validation runs live as they type so they get immediate feedback while
 correcting mistakes.
 
 ## Structure
+
+```
 src/
-data/
-mock-data.json        # source data, loaded at startup
-utils/
-validation.js         # all business rule validation
-export.js             # JSON download helper
-components/
-CompanyProfile.jsx    # name, legal name, NAICS, public fields
-Directors.jsx         # director list, add/remove
-Locations.jsx         # location list, add/remove
-App.jsx               # state owner, export handler
-index.css             # all styles
+  data/
+    mock-data.json        # source data, loaded at startup
+  utils/
+    validation.js         # all business rule validation
+    export.js             # JSON download helper
+  components/
+    CompanyProfile.jsx    # name, legal name, NAICS, public fields
+    Directors.jsx         # director list, add/remove
+    Locations.jsx         # location list, add/remove
+  App.jsx                 # state owner, export handler
+  index.css               # all styles
+```
 
 ## Business rules implemented
 
